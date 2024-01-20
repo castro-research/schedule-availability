@@ -40,7 +40,9 @@ Business rules:
 - The bike can be rented for minimum of 15 minutes.
 - All rental should have a idle time ( it will dependes on the bike type ).
 - The bike can be damaged, so the bike can be unavailable for a period of time.
-
+- The bike damaged can be replaced by another same SKU bike if available.
+- If bike is not available, i must show similar bikes available.
+- By having others rental place, i must show a nearby place with available bikes. 
 
 # Considerations
 

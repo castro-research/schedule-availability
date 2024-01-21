@@ -1,14 +1,14 @@
 # Introduction
 
-How to check availability of whatever in programming language and database ?
+How to check availability of whatever in programming language and database?
 
 # The problem
 
-The problem i want to solve here should be work with different use cases, for example:
+The problem I want to solve here should be work with different use cases, for example:
 
 ### Case 1: Car Rental
 
-An user want to rent a car, but he want to know if the car is available in the date he want to rent.
+An user wants to rent a car, but he wants to know if the car is available in the date he wants to rent.
 
 Business rules:
 
@@ -19,7 +19,7 @@ Business rules:
 
 ### Case 2: Room Reservation
 
-An user want to reserve a room, but he want to know if the room is available in the date he want to reserve.
+An user want to reserve a room, but he want to know if the room is available in the date he wants to reserve.
 
 Business rules:
 
@@ -33,16 +33,44 @@ Business rules:
 
 ### Case 3: Renting bikes
 
-An user want to rent a bike, but he want to know if the bike is available in the date he want to rent.
+An user wants to rent a bike, but he wants to know if the bike is available in the date he wants to rent.
 
 Business rules:
 
 - The bike can be rented for minimum of 15 minutes.
-- All rental should have a idle time ( it will dependes on the bike type ).
+- All rental should have a idle time (it will dependes on the bike type).
+- The bike can be rented for a maximum of 24 hours.
+- It can be possible to check the availability of a bike grouped by bike type.
 - The bike can be damaged, so the bike can be unavailable for a period of time.
 - The bike damaged can be replaced by another same SKU bike if available.
-- If bike is not available, i must show similar bikes available.
-- By having others rental place, i must show a nearby place with available bikes. 
+- If bike is not available, it must show similar bikes available.
+- By having others rental place, it must show a nearby place with available bikes. 
+
+### Case 4: Tickets Availability
+
+An user wants to buy a ticket, but he wants to know if the ticket is available in the date he wants to buy.
+
+Business rules:
+
+- The ticket can be bought an hour before the event.
+- The ticket can be redeemedat any time.
+- If the ticket is not available, it must show how many people got an interest in the ticket and receive a notification that it was unavaiable too. (How many people got an interest in the ticket).
+- The user can ingress in a waiting list to receive a notification when the ticket is available.
+- It must show how many places were avaiable.
+
+### Case 5: Doctor appointment
+
+An user wants to schedule a doctor appointment, but he wants to know if the doctor is available in the date he wants to schedule.
+
+Business rules:
+
+- The doctor only works from 8:00 to 18:00.
+- The doctor can have a lunch break from 12:00 to 14:00.
+- The doctor has an break between each appointment of 10 minutes.
+- The user can schedule an appointment with max duration of 2 hours.
+- The user can schedule an appoiiintment with min duration of 30 minutes.
+- The user can ingress in a waiting list in case of withdraw.
+- An user can only have a schedule per month.
 
 # Considerations
 
